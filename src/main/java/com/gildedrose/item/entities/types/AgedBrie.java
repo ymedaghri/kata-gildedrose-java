@@ -11,7 +11,7 @@ public class AgedBrie extends ItemWrapper implements Updatable {
   }
 
   @Override
-  public void updateQuality() {
+  public void update() {
     if (quality < 50) {
       increaseQualityByOne();
     }

@@ -18,7 +18,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(sellIn).withQuality(20).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getSellIn()).isEqualTo(sellIn - 1);
@@ -32,7 +32,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(sellIn).withQuality(20).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getQuality()).isEqualTo(0);
@@ -46,7 +46,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(10).withQuality(quality).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getQuality()).isEqualTo(quality);
@@ -60,7 +60,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(sellIn).withQuality(20).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getQuality()).isEqualTo(21);
@@ -74,7 +74,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(sellIn).withQuality(20).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getQuality()).isEqualTo(22);
@@ -88,7 +88,7 @@ class BackStagePassesTest {
         BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT).withSellIn(sellIn).withQuality(20).build();
 
     // When
-    backStagePasses.updateQuality();
+    backStagePasses.update();
 
     // Then
     Assertions.assertThat(backStagePasses.getQuality()).isEqualTo(23);

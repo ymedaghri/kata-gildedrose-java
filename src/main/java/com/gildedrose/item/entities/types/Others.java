@@ -11,7 +11,7 @@ public class Others extends ItemWrapper implements Updatable {
   }
 
   @Override
-  public void updateQuality() {
+  public void update() {
     if (quality > 0) {
       decreaseQualityByOneOrTwoIfConjured();
     }

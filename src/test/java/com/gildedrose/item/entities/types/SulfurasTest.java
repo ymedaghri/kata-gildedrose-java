@@ -16,7 +16,7 @@ class SulfurasTest {
                                           .withQuality(20).build();
 
     // When
-    sulfuras.updateQuality();
+    sulfuras.update();
 
     // Then
     Assertions.assertThat(sulfuras.getQuality()).isEqualTo(20);

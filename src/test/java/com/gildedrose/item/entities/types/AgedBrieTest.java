@@ -19,7 +19,7 @@ class AgedBrieTest {
                                           .build();
 
     // When
-    agedBrie.updateQuality();
+    agedBrie.update();
 
     // Then
     Assertions.assertThat(agedBrie.getSellIn()).isEqualTo(sellIn - 1);
@@ -33,7 +33,7 @@ class AgedBrieTest {
                                           .build();
 
     // When
-    agedBrie.updateQuality();
+    agedBrie.update();
 
     // Then
     Assertions.assertThat(agedBrie.getQuality()).isEqualTo(quality);
@@ -46,7 +46,7 @@ class AgedBrieTest {
                                           .build();
 
     // When
-    agedBrie.updateQuality();
+    agedBrie.update();
 
     // Then
     Assertions.assertThat(agedBrie.getQuality()).isEqualTo(21);

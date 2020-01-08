@@ -1,7 +1,7 @@
 package com.gildedrose;
 
 public interface Updatable {
-  void updateQuality();
+  void update();
   int getSellIn();
   int getQuality();
 }
